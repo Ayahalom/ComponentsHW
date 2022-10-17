@@ -36,3 +36,11 @@ button {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.inputBlock {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    display: flexbox;
+}

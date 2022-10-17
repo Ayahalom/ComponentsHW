@@ -1,10 +1,10 @@
-function InputBlock({ placeholdertext, functionality }) {
+function InputBlock({ value, onChange, nameText, unitText }) {
     return (
-        <div>
-            <form className="inputBlock" type="text" onSubmit={e => { e.preventDefault(); }}>
-                <input onChange={functionality} placeholder={placeholdertext}></input>
-            </form>
-        </div >
+        <div className="inputBlock">
+            <p>{nameText}</p>
+            <input value={value} onChange={onChange}></input>
+            <p>{unitText}</p>
+        </div>
     )
 }
 export default InputBlock;

@@ -1,11 +1,13 @@
-import OutputBlock from './OutputBlock';
+import { calcTrajectoryData } from '../utils/physicsCalculation';
 
 
-function Outputs() {
+function Outputs({ velocity, angle }) {
+    const text = () => {
+        const { distance, airborneTime } = calcTrajectoryData(velocity, angle);
+        return `The throw distance is ${Math.round(distance)} [m]`
+    }
     return (
-        <div id="outputs">
-            <OutputBlock text="Distance" />
-        </div>
+        <h1> {text()} </h1>
     )
 }
 
