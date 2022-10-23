@@ -1,11 +1,10 @@
 import { Component } from 'react';
-import './App.css';
-import Inputs from './components/Inputs';
-import Outputs from './components/Outputs';
 import { useState } from 'react';
+import './App.css';
+import { Inputs, Outputs } from './components'
 
 
-function App() {
+const App = () => {
   const [velocity, setVelocity] = useState(0);
   const [angle, setAngle] = useState(0);
   return (

@@ -1,9 +1,9 @@
-function InputBlock({ value, onChange, nameText, unitText }) {
+const InputBlock = ({ value, onChange, nameText, unitText }) => {
     return (
         <div className="inputBlock">
-            <p>{nameText}</p>
+            <span>{nameText}</span>
             <input value={value} onChange={onChange}></input>
-            <p>{unitText}</p>
+            <span>{unitText}</span>
         </div>
     )
 }
